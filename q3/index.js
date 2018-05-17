@@ -1,5 +1,5 @@
 const target = [];
-
+// 产生一个符合条件的随机二维数组
 for (let i = 0; i < 4; i++) {
   target[i] = [];
   for (let j = 0; j < 4; j++) {
@@ -25,7 +25,10 @@ console.log(target);
  * 4  6  9  10
  * 8  9  10 11
  */
-
+/**
+ * 以右上角或者左下角的点作为起点
+ * 缩小行范围或者缩小列范围
+ */
 function whetherHaveTheNumber(number, target) {
   const rowLength = target.length;
   const colLength = target[0] && target[0].length;
